@@ -1,1 +1,65 @@
 
+
+           
+            
+	
+           h1 { 
+             font-family: 'PrataRegular'; 
+             font-weight: normal; 
+             font-style: normal;
+             color: orange;
+             }
+ 
+			body {
+				width: 90%;
+                margin: 0 auto;
+                background-image: url("http://cache.desktopnexus.com/thumbseg/377/377393-bigthumbnail.jpg");
+                background-color: #BE46EB;
+                text-align: center;
+               }
+           a {color: white;
+            }
+			#content {
+		     overflow: auto;
+                }
+
+			#nav, #feature, #footer {
+				margin: 1%; 
+                 }
+			.column1, .column2, .column3 {
+				width: 31.3%;
+				float: left;
+				margin: 1%;}
+			.column3 {
+                background-color: #FF0040;
+				margin-right: 0%;}
+            .column2 {
+                background-color: #D7DF01;
+				margin-right: 0%;}
+            .column1 {
+                background-color: #0B6121;
+				margin-right: 0%;}
+			li { 
+				display: inline;
+				padding: 0.5em;}
+            #nav {background-color: #F18B72;
+                padding: 0.5em 0;
+                margin-bottom: 0em;}
+              #footer {
+				background-color: #F18B72;
+                padding: 0.5em 0;
+                margin-bottom:5em;
+                color: white; }
+             
+			#feature, .article{
+				height: 10em;
+				margin-bottom: 1em;
+				}
+            #feature {
+             background-color: #8CC63E;
+             background-image: url("http://gallery.yopriceville.com/var/thumbs/Free-Clipart-Pictures/Butterflies-PNG/.album.jpg?m=1435651309");
+             background-size:contain;
+             background-position: right; 
+             background-repeat:no-repeat;}
+           
+
