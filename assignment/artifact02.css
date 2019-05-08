@@ -52,9 +52,10 @@ float:left;
 }
 
 #footer {
+border:solid 1px;
 background-color: lightgreen;
- padding: 1px;
- margin:0px;
+ padding: 10px;
+ margin:10px;
  text-align:center;
  width: 100%;
  margin-Top: 10%;
