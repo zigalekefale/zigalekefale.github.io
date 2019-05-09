@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Bullseye! Tutoring</title>
-    <link rel="stylesheet" href="artifact.css" />
+    <link rel="stylesheet" href="module05.css" />
   </head>
   <body>
     <section id="page2">
