@@ -35,7 +35,6 @@ background-color: #50361E;
 padding: 20px 0 40px 0;
 }
 #header h1 {
-background-color:#33F62A;
 margin: 0;
 padding: 0 0 0 30px;
 font-weight: bold;
@@ -45,7 +44,6 @@ line-height: 65px;
 letter-spacing: -1px;
 }
 #header h2 {
-background-color:#C52AF6;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
