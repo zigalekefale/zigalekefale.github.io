@@ -7,6 +7,11 @@ color: #3f3f3f;
 font-size: 16px;
 line-height: 24px;
 }
+#verticalmenu {
+  color: black;
+  background:blue;
+  overflow: hidden;
+}
 
 a { color: #000088; }
 a:hover { color: #880000; }
