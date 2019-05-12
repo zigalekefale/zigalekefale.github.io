@@ -37,6 +37,7 @@ background: #f9f9f9;
 padding: 20px 0 40px 0;
 }
 #header h1 {
+background-color:#D3A3AD;
 Color: #F2F5A9;
 margin: 0;
 padding: 0 0 0 30px;
@@ -90,6 +91,7 @@ font-weight: normal; background: #5f5f5f; color: #fff; padding: 10px; margin: 10
 .cright { float: right; width: 280px; margin: 10px 0; }
 
 #footer { 
+ background-color:#D3A3AD;
  color:#AF7AC5;
 -webkit-border-bottom-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
