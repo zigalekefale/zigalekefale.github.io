@@ -100,12 +100,12 @@ font-weight: normal; background: #5f5f5f; color: #fff; padding: 10px; margin: 10
 border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
 
-text-align:center;
+
 color: #FFFFFF;
 padding: 20px;
 border-top: 1px solid #1f1f1f;
 }
-#footer a { color: #fff; text-decoration: none; border-bottom: 1px dotted #fff; }
+#footer a { color: #fff; text-align:center; text-decoration: none; border-bottom: 1px dotted #fff; }
 #footer a:hover { border-bottom: 1px dotted #ccc; }
 
 .left { float: left; }
