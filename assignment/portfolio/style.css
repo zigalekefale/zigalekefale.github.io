@@ -38,6 +38,7 @@ background-color: #8BB2D8;
 padding: 20px 0 40px 0;
 }
 #header h1 {
+text-align:center;
 Color: #FFFFFF;
 margin: 0;
 padding: 0 0 0 30px;
@@ -48,6 +49,7 @@ line-height: 65px;
 letter-spacing: -1px;
 }
 #header h2 {
+ text-aalign:center;
  background-color:#8BB2D8;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
@@ -92,6 +94,7 @@ font-weight: normal; background: #5f5f5f; color: #fff; padding: 10px; margin: 10
 .cright { float: right; width: 280px; margin: 10px 0; }
 
 #footer { 
+ text-align:center;
  background-color:#8BB2D8;
  color:#AF7AC5;
 -webkit-border-bottom-right-radius: 10px;
