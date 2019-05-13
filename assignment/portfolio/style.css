@@ -13,6 +13,10 @@ a { color: #000088; }
 a:hover { color: #880000; }
 
 #wrap { 
+margin: 100px auto;
+margin-right:100px;
+width: 940px;
+background: #F7B6DA;
 background-color:#F7B6DA;
 
 
