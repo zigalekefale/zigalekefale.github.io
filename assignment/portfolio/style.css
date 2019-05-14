@@ -14,7 +14,7 @@ background-image: url("https://www.incomeactivator.com/images/freebg4.jpg");
 #wrap { 
 margin: 100px auto;
 width: 940px;
-background: #F7B6DA;
+background: #745767;
 background-color:#F7B6DA;
 
 
@@ -83,7 +83,7 @@ border-top: 1px solid #e1e1e1;
 #menu ul li a { color: #12c; text-decoration: none; border-bottom: 1px dotted #12c; }
 #menu ul li a:hover { color: #c12; border-bottom: 1px dotted #c12; }
 
-#content { float: left; width: 580px; background-color: #DDEDAE; margin: 10px 0 40px 20px;}
+#content { float: left; width: 580px; margin: 10px 0 40px 20px;}
 #content h2 { font-weight: normal; font-size: 22px;  line-height: 33px; }
 #content h3 { font-size: 17px; font-weight: normal; }
 
