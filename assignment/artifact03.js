@@ -92,11 +92,7 @@ function downLeft(pHeight, pColorEven, pColorOdd, pSymbol){
 var rLine ="";
 for (i=pHeight;i>= 0;i--){
 rLine +="<p>";
-// Fill in the left
-  
-for (x=1; x>=pHeight-i;x--){
-  rLine +="--";}
-  
+
 //Create each line on the Rhombus
 for(j=1;j<i;j++){
 
