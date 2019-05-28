@@ -9,17 +9,20 @@ var current = "e";
  function change(){
   var pic = document.getElementById("pic");
   if(current=="e"){
-   pic.src="img/lion.jpg";
+   pic.src="img/image1.jpg";
    current = "l";
   }else if(current == "l"){
-   pic.src="img/bear.jpg";
+   pic.src="img/image2.jpg";
    current = "b";
   }else if(current == "b"){
-   pic.src="img/fifa.jpg";
+   pic.src="img/image3.jpg";
+   current = "f";
+   else if(current == "b"){
+   pic.src="img/image4.jpg";
    current = "f";
   }
   else{
-   pic.src="img/elephant.jpg";
+   pic.src="img/image5.jpg";
    current = "e";
   }
  }
