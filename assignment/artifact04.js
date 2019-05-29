@@ -17,20 +17,20 @@ function ValidateFrom() {
    //Required. Maximum 12 characters.
    if (myContact.username.value.lenght > 12 ||
      myContact.username.value===null || 
-     myContact.username.value==="")
+     myContact.username.value==="") {
           errorMessages += "<p>The username must be less than 20 characters and is required</P>";
    else
-       validUsername =true;
+       validUsername =true;}
 
    //console.log(validUsername);
      
   /***********VALIDATES PASSWORD ******** */
       if (myContact.password.value==null || 
           myContact.password.value=== "" ||
-          myContact.password.value.lenght > 7)
+          myContact.password.value.lenght > 7){
       errorMessages += "<p>The password must be less than 7 characters and it is required</P>";
       else
-         validUserpassword =true;
+         validUserpassword =true;}
 
       /***********VALIDATES FIRSTNAME ******** */
       if (myContact.firstname.value==null ||
