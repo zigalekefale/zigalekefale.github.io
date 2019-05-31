@@ -11,12 +11,11 @@
     <h1>CONTACT US FROM</h1>
     <div id="errorMessages"></div>
     <!--Add the URL to your Thank you page-->
-    <form 
-          action="http://bellevuecollege.edu" 
+    <form action="zigalekefale.github.io/assignment/portfolio/thankyou.html" id="usrform"
           method="get" name="myContact" 
           onsubmit="return ValidateForm();">
    
-        <legend>User Information</legend>
+        
         <label for="firstname">Enter Firstname(Max 20 characters)</label>
         <br>
         <input type="text" id="firstname">
@@ -42,7 +41,7 @@
         <input type="password" maxlength="7" id="password">
 
      
-        <legend>Current Address</legend>
+        <br> Address<br>
         <label for="address">Enter Address</label>
         <br>
         <input type="text" name="address" id="address" size="50">
@@ -63,9 +62,9 @@
         <br>
         <input type="text" name="zip" id="zipcode">
      
-        <legend>Feel free to add comments</legend>
-        <textarea name="commentbox" id="commentbox" row="4" cols="50"></textarea>
-      </fieldset>
+        <br>Feel free to add comments<br>
+ 
+         <textarea rows="4" cols="50" name="comment" form="usrform"> </textarea>
       <br>
       <input id="submit" type="submit" value="submit">
       <input id="cancel" type="submit" value="cancel">
