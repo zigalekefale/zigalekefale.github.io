@@ -5,10 +5,10 @@ var myImages =["https://wallpapercave.com/wp/V04eMTk.jpg",
                "https://i.ytimg.com/vi/soXTGNfI8bo/maxresdefault.jpg"];
 
 
-var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
+var captionImages =
+["Nature","Fountain", "Sunny", "Park","Spring"];
 
  var index=0; 
-
  function updateImage(){
  document.getElementById("slideshow").src = myImages[index];
  document.getElementById("slideshow").alt= captionImages[index];
