@@ -1,25 +1,51 @@
-/*image lists
-var i = 0
-images[0] = 'https://i2.wp.com/www.desktopanimated.com/wp-content/uploads/2013/08/Green_Fields_1.jpg?resize=150%2C150';
-images[1] = 'https://www.99inspiration.com/wp-content/uploads/2017/03/Beautiful-Nature-Landscape-Photography-77-198x145.jpg';
-images[2] = 'http://www.fulldose.net/wp-content/themes/Fulldose/scripts/timthumb.php?src=http://www.fulldose.net/wp-content/uploads/2016/01/Autumn-at-Lake-Dock-Thousand-Islands-Canada.jpg&w=162&h=162'; 
-*/
-function changeImage(){
-  var intervalId;
-  function startSlideShow(){
-    intervalId = setInterval(changeImage, 500);
-  }
-  function stopSlideShow(){
-    clearInterval(intervalId)
-  }
-  function changeImage(){
-    var imageSrc = document.getElementById("image").getAttribute("src");
-    var currentImageNumeber = imageSrc.substing(imageSrc.lastIndexOf("/") + 1, imageSrc.lastIndexOf("/") + 2);
-    if (currentImageNumber == 8)
-      {
-        currentImageNumber = 0;
-      }
-  }
+var myImages =["https://wallpapercave.com/wp/V04eMTk.jpg",
+               "http://3.bp.blogspot.com/-RpAX4mUMNH0/T-TKPkySDeI/AAAAAAAAL1U/f3ANt8NQn0k/s1600/nature-wallpaper-19.jpg",
+               "http://images.all-free-download.com/images/graphiclarge/natural_beauty_of_hd_picture_1_166092.jpg",
+               "https://i.ytimg.com/vi/JGHQHdbnYwo/maxresdefault.jpg",
+               "https://i.ytimg.com/vi/soXTGNfI8bo/maxresdefault.jpg"];
+
+
+var captionImages =["Laugh","Love","Lunch","Happiness","Family"];
+
+ var index=0; 
+
+ function updateImage(){
+ document.getElementById("slideshow").src = myImages[index];
+ document.getElementById("slideshow").alt= captionImages[index];
+ document.getElementById("caption").textContent = captionImages[index]; 
+} 
+
+function next(){
+ if (myImages.length == index+1)
+ index=0;
+ else
+ index++;
+ updateImage();
+} 
  
-  document.getElementById("image").setattribute("src", "/Images/" + (Number(currentImageNumber) + 1) + ".jpg");
+
+function back(){
+ if (index===0)
+ index=myImages.length-1;
+ else
+ index--;
+ 
+ updateImage();
+} 
+
+var nextButton = document.getElementById("next"); 
+var previousButton = document.getElementById("previous"); 
+
+previousButton.addEventListener("click",back,false);
+nextButton.addEventListener("click",next,false); 
+function autoSlide(){
+if (document.getElementById("auto").checked)
+ next(); 
 }
+setInterval(autoSlide,2000); // Next
+
+
+
+
+
+
