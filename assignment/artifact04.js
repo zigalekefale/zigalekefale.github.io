@@ -1,5 +1,5 @@
 
-     function ValidateForm(){
+function ValidateForm(){
    var validUsername = false;
    var validUserpassword = false;
    var validFirstName = false;
@@ -53,5 +53,5 @@
 
       document.getElementById("errorMessages").innerHTML = errorMessages;
       //make sure you return all the boolean variable that are checking each filed
-      return (validUsername && validUserNassword && validFirstName && validPhone) ;
+      return (validUsername && validUserpassword && validFirstName && validPhone) ;
     }
