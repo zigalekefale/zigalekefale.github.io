@@ -46,7 +46,7 @@ function ValidateForm(){
       if (myContact.phone.value==null ||
           myContact.phone.value=== "" ||
           myContact.phone.value.length >15 || 
-          !myContact.Phone.value.match(numbers))
+          !myContact.phone.value.match(numbers))
       errorMessages += "<p>The phone number must be less than 15 characters and it is required. only numbers are accepted</P>";
       else 
       validPhone =true;
