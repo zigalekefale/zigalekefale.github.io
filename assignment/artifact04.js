@@ -92,9 +92,9 @@ function ValidateForm(){
 
   if (myContact.countries.value == 3)
     if (myContact.zipcode.value.length === 5)
-      validZipcode = true
-    else
       errorMessages += "<p>A Zip Code is required if the chosen country is USA.</p>";
+    else
+      validZipcode = true;
   
       document.getElementById("errorMessages").innerHTML = errorMessages;
       //make sure you return all the boolean variable that are checking each filed
