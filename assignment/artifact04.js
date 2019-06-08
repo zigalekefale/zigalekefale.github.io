@@ -1,6 +1,6 @@
 function ValidateForm(){
-  var validFirstname = false;
-  var validLastname = false;
+  var validFirstName = false;
+  var validLastName = false;
   var validEmail = false;
   var validUsername = false;
   var validUserPassword = false;
@@ -35,7 +35,7 @@ function ValidateForm(){
       if (myContact.firstname.value==null ||
           myContact.firstname.value=== "" || 
           myContact.firstname.value.length >20 ||
-          !myContact.firstname.value.match(letters))
+         !myContact.firstname.value.match(letters))
       errorMessages += "<p>The firstname must be less than 20 characters and it is required. only letters and numbers are accepted</P>";
       else 
       validFirstName =true;
@@ -66,21 +66,21 @@ function ValidateForm(){
       else 
       validPhone =true;
   
-  /*****               ******/
+  /*****VALIDATEADDRESS******/
     if (myContact.address.value == null ||
     myContact.address.value === "")
     errorMessages += "<p> An Address is required</p>";
     else
     validAddress = true;
   
-  /*************/
+  /*******VALIDATE CITY******/
   
    if (myContact.city.value == null ||
     myContact.city.value === "")
     errorMessages += "<p> A City is required</p>";
   else
     validCity = true;
-  /**************************/
+  /**********VALIDATE COUNTRY****************/
   
    if (myContact.countries.value == null ||
     myContact.countries.value === "")
@@ -88,7 +88,7 @@ function ValidateForm(){
   else
     validCountry = true;
   
-  /*****************************/
+  /**********VALIDATE ZIP CODE*******************/
 
   if (myContact.countries.value == 3)
     if (myContact.zipcode.value.length === 5)
@@ -98,5 +98,5 @@ function ValidateForm(){
   
       document.getElementById("errorMessages").innerHTML = errorMessages;
       //make sure you return all the boolean variable that are checking each filed
-      return (validFirstname && validLastname && validEmail && validUsername && validUserpassword && validPhone && validAddress && validCity && validZipcode);
+      return (validFirstName && validLastName && validEmail && validUsername && validUserpassword && validPhone && validAddress && validCity && validZipcode);
     }
