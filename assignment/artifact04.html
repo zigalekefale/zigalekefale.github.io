@@ -12,7 +12,9 @@
     <div id="errorMessages"></div>
     <script src="artifact04.js"></script>
     <!--Add the URL to your Thank you page-->
-      <form action="thankyou.html" onsubmit="return ValidateForm();">
+      <form action="https://zigalekefale.github.io/assignment/portfolio/thankyou.html" id="usrform"
+          method="get" name="myContact" 
+          onsubmit="return ValidateForm();">  
         <label for="firstname">Enter Firstname (Should accept only alphabetical value, maximum 20 characters)</label>
         <br>
         <input type="text" id="firstname">
@@ -25,7 +27,7 @@
         <br>
         <input type="text" id="email">
         <br>
-        <label for="phone">Enter Phone Number (Should accept only NUMERICAL values.  Maximum 15 digits. )</label>
+         <label for="phone">Enter Phone Number (Should accept only NUMERICAL values.  Maximum 15 digits. )</label>
         <br>
         <input type="text" id="phone">
         <br>
@@ -56,7 +58,7 @@
         </select>
         <br>
    <br>
-<label for="states">Choose Your State </label>
+<label for="States">Choose Your State </label>
         <br>
         <select id="states">
           <option>Alabama</option>
@@ -78,7 +80,7 @@
         <input type="text" name="zip" id="zipcode">
      
         <br>Comments<br> 
-         <textarea rows="4" cols="50" name="comment"> </textarea>
+  <textarea rows="4" cols="50" name="comment" form="usrform"> </textarea>
       <br>
       <input id="submit" type="submit" value="submit">
       <input id="cancel" type="submit" value="cancel">
