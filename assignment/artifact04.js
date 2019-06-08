@@ -90,8 +90,8 @@ function ValidateForm(){
   
   /**********VALIDATE ZIP CODE*******************/
 
-  if (myContact.countries.value == 3)
-    if (myContact.zipcode.value.length === 5)
+  if (myContact.countries.value == 3
+     myContact.zipcode.value.length === 5)
       errorMessages += "<p>A Zip Code is required if the chosen country is USA.</p>";
     else
       validZipcode = true;
