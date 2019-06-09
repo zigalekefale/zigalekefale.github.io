@@ -2,7 +2,7 @@ body {
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 0; 
-background: #e5e5e5;
+background-color: #d96fee;
 color: #3f3f3f;
 font-size: 16px;
 line-height: 24px;
@@ -15,7 +15,7 @@ background-image: url("http://3.bp.blogspot.com/-i2Ce7HpxxSM/UXO93I9Cj9I/AAAAAAA
 margin: 100px auto;
 width: 940px;
 background: #745767;
-background-color:#E0E6F8;
+background-color:#24f1ba;
 
 
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -27,16 +27,16 @@ border-radius: 10px;
 }
 
 #header {
- text-align: center;
--webkit-border-top-left-radius: 10px;
--webkit-border-top-right-radius: 10px;
--moz-border-radius-topleft: 10px;
--moz-border-radius-topright: 10px;
+text-align: center;
+webkit-border-top-left-radius: 10px;
+webkit-border-top-right-radius: 10px;
+moz-border-radius-topleft: 10px;
+moz-border-radius-topright: 10px;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 
-background-color: #8BB2D8;
-padding: 20px 0 40px 0;
+background-color:#6353f7;
+padding: 10px 0 20px 0;
 }
 #header h1 {
 text-align:center;
@@ -44,7 +44,7 @@ Color: #FFFFFF;
 margin: 0;
 padding: 0 0 0 30px;
 font-weight: bold;
-color: #3f3f3f;
+color: #26e3f8;
 font-size: 38px;
 line-height: 65px;
 letter-spacing: -1px;
@@ -58,17 +58,17 @@ border-radius: 10px;
 margin: 0 0 0 20px; 
 padding: 5px 12px;
 font-weight: normal;
-color: #A7A0FF;
+color: #12c;
 font-size: 22px;
 letter-spacing: -1px;
-background: #FFEE9F;
-border: 1px solid #FFE25F;
+background: #88e6a1;
+border: 1px solid #fb5fff;
 display: inline;
 }
 
-#topmenu {
-background: #d91bff;
-padding: 10px 20px;
+#topmenu {  
+background: #ecdce1;
+padding: 20px 20px;
 border-bottom: 1px solid #e1e1e1;
 border-top: 1px solid #e1e1e1;
 }
@@ -91,8 +91,8 @@ border-top: 1px solid #e1e1e1;
 .cright { float: right; width: 280px; margin: 10px 0; }
 
 #footer { 
- text-align:center;
- background-color:#8BB2D8;
+text-align:center;
+background-color:#6353f7;
  color:#AF7AC5;
 -webkit-border-bottom-right-radius: 10px;
 -webkit-border-bottom-left-radius: 10px;
@@ -102,13 +102,14 @@ border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
 
 
-color: #FFFFFF;
-padding: 20px;
-border-top: 1px solid #1f1f1f;
+color: #f1eeee;
+padding: 10px;
+border-top: 1px solid #d91bff;
 }
-#footer a { color: #fff; text-align:center; text-decoration: none; border-bottom: 1px dotted #fff; }
-#footer a:hover { border-bottom: 1px dotted #ccc; }
+#footer a { color: #f9f8fa; text-align:center; text-decoration: none; border-bottom: 1px dotted #fff; }
+#footer a:hover { border-bottom: 1px dotted rgb(226, 37, 26); }
 
 .left { float: left; }
 .right { float: right; }
 .clear { clear: both; }
+
