@@ -37,10 +37,10 @@ function validateEmail() {
 	}
 }
 
-function validateMessage() {
-  var vMessage = document.getElementById("message").value;
-  if (vMessage === null || vMessage === "") {
-    vFeedback.textContent = "Message is REQUIRED";
+function validateComment() {
+  var vComment = document.getElementById("message").value;
+  if (vComment === null || vMessage === "") {
+    vFeedback.textContent = "Comment is REQUIRED";
     return false;
   }
   else {
@@ -49,7 +49,7 @@ function validateMessage() {
 }
 
 function validateForm() {
-  return validateName() && validateEmail() && validateMessage();
+  return validateName() && validateEmail() && validateComment();
 }
 
 
