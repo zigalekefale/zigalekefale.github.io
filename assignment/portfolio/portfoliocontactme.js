@@ -1,55 +1,16 @@
-var el = document.getElementById("date");
-var currentDate = new Date();
-var month = currentDate.getMonth()+1;
-var day = currentDate.getDate();
-var year = currentDate.getFullYear();
-var hour = currentDate.getHours();
-var minute = currentDate.getMinutes();
-if(minute < 10)
-	el.innerHTML = "Current Date & Time: " + month + "/" + day + "/" + year + " " + hour + ":0" + minute;
-else
-	el.innerHTML = "Current Date & Time: " + month + "/" + day + "/" + year + " " + hour + ":" + minute;
 
-//global variable for our HTML section for the feedback
-var vFeedback = document.getElementById("feedback");
+      var frmvalidator = new Validator("myform");
+      frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+      frmvalidator.addValidation("FirstName","maxlen=20",
+                                 "Max length for FirstName is 20");
 
-function validateName() {
-  var vName = document.getElementById("name").value;
-  if (vName === null || vName === "") {
-    vFeedback.textContent = "Name is REQUIRED";
-    return false;
-  }
-  else {
-    return true;
-  }
-}
+      frmvalidator.addValidation("LastName","req");
+      frmvalidator.addValidation("LastName","maxlen=20");
 
-function validateEmail() {
-    var x = document.getElementById("email").value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        return false;
-    }
-	else {
-		return true;
-	}
-}
+      frmvalidator.addValidation("Email","maxlen=50");
+      frmvalidator.addValidation("Email","req");
+      frmvalidator.addValidation("Email","email");
+    
+     frmvalidator.addValidation("Comment","maxlen=50");
 
-function validateComment() {
-  var vComment = document.getElementById("message").value;
-  if (vComment === null || vMessage === "") {
-    vFeedback.textContent = "Comment is REQUIRED";
-    return false;
-  }
-  else {
-    return true;
-  }
-}
-
-function validateForm() {
-  return validateName() && validateEmail() && validateComment();
-}
-
-
+    
