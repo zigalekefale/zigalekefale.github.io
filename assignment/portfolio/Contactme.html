@@ -28,28 +28,29 @@
 <!-- <li><a href="https://zigalekefale.github.io/assignment/portfolio/thankyou.html"> Thank You</a></li> -->
 </ul>
 </div>
-	
+	<h1>Contact Form</h1>
+    <div id="errorMessages"></div>
+    <form action="thankyou.html" id="myform" name=myContact onsubmit="return ValidateForm();">
+      
+      <p>
+        <label class="form-label" for='FirstName'>First Name:</label>
+        <input class="form-control" type="text" maxlength="20" id="FirstName" name="FirstName" required />
+      </p>
+      <p>
+        <label class="form-label" for='LastName'>Last Name:</label>
+        <input class="form-control" type="text" maxlength="50" id="LastName" name="LastName" required/>
+      </p>
+      <p>
+        <label class="form-label" for='Email'>Email:</label>
+        <input class="form-control" type="email" id="EMail" name="EMail" required/>
+      </p>
+      <p>
+        <label class="form-label" for='Comment'>Comment:</label>
+        <textarea class="form-control" cols="20" rows="5" id="Address" name="Address" required></textarea>
+      </p>
+ <input type="submit" name="submit" value="Submit">
+      
      <div id="content">
-      <p>Please use the form below to contact me (All fields are required).</p>
-	  <div id="feedback"></div>
-	  <form action="thankyou.html" method="get" onsubmit="return validateForm();">
-        <label for="name">Your Name</label>
-        <br>
-        <input type="text" name="name" id="name" size="30" maxlength="30">
-        <br>
-        <br>
-        <label for="email">Your Email</label>
-        <br>
-        <input type="text" name="email" id="email" size="30" maxlength="30">
-        <br>
-        <br>
-        <label>Comment</label>
-        <br>
-        <textarea cols="70" rows="4" id="comment"></textarea>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
 	     
       <div class="clear"> </div>
 
