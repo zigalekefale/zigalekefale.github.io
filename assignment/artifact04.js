@@ -1,102 +1,38 @@
-function ValidateForm(){
-  var validFirstName = false;
-  var validLastName = false;
-  var validEmail = false;
-  var validUsername = false;
-  var validUserPassword = false;
-  var validPhone = false;
-  var validAddress = false;
-  var validCity = false;
-  var validCountry = false;
-  var validZipcode = false;
-  
+ var frmvalidator = new Validator("myform");
+      frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+      frmvalidator.addValidation("FirstName","maxlen=20",
+                                 "Max length for FirstName is 20");
+
+      frmvalidator.addValidation("LastName","req");
+      frmvalidator.addValidation("LastName","maxlen=20");
+
+      frmvalidator.addValidation("Email","maxlen=50");
+      frmvalidator.addValidation("Email","req");
+      frmvalidator.addValidation("Email","email");
+
+      frmvalidator.addValidation("Password","maxlen=7");
+      frmvalidator.addValidation("Password","req");
+    
+      frmvalidator.addValidation("Phone","maxlen=15");
+      frmvalidator.addValidation("Phone","numeric");
  
-  var letters = /^[A-Za-z]+$/;
-  var numbers = /^[0-9]+$/;
-   
-  var errorMessages =""; //All the error Messages are going to stay in this variable
-   /***********VALIDATES USERNAEM ******** */
-   //Required filed
-   //This syntax is using name-of-form.name-of-filed.value
-   //you can also use document .getElementById("id-of-filed").value
+     frmvalidator.addValidation("Address","maxlen=50");
+     frmvalidator.addValidation("Country","dontselect=000");
 
-   /***********VALIDATES USERNAEM ******** */
-   //Required. Maximum 12 characters.
-   if (myContact.username.value.length > 12 ||
-     myContact.username.value===null || 
-     myContact.username.value==="")
-          errorMessages += "<p>The username must be less than 12 characters and is required</P>";
-   else 
-       validUsername =true;
 
-   //console.log(validUsername);
-  
-  /***********VALIDATES FIRSTNAME ******** */
-      if (myContact.firstname.value==null ||
-          myContact.firstname.value=== "" || 
-          myContact.firstname.value.length >20 ||
-         !myContact.firstname.value.match(letters))
-      errorMessages += "<p>The firstname must be less than 20 characters and it is required. only letters and numbers are accepted</P>";
-      else 
-      validFirstName =true;
+      frmvalidator.addValidation("City","maxlen=50");
+      frmvalidator.addValidation("City","req");
 
-  /***************VALIDATES LASTNAME********/
-   if (document.getElementById("lastname").value.length > 0 &&
-    document.getElementById("lastname").value.length <= 50)
-    validLastname = true;
-  else
-    errorMessages += "<p> The lastname must be less than or equal to 50 characters";
+      frmvalidator.addValidation("Countries","maxlen=50");
+      frmvalidator.addValidation("Countries","req");
 
-     
-  /***********VALIDATES PASSWORD ******** */
-      if (myContact.password.value==null || 
-          myContact.password.value=== "" ||
-          myContact.password.value.length > 7){
-      errorMessages += "<p>The password must be less than 7 characters and it is required</P>";}
-      else 
-         validUserPassword =true;
+      frmvalidator.addValidation("States","maxlen=50");
+      frmvalidator.addValidation("States","req");
 
-     
-      /***********VALIDATES PHONE NUMBER ******** */
-      if (myContact.phone.value==null ||
-          myContact.phone.value=== "" ||
-          myContact.phone.value.length >15 || 
-          !myContact.phone.value.match(numbers))
-      errorMessages += "<p>The phone number must be less than 15 characters and it is required. only numbers are accepted</P>";
-      else 
-      validPhone =true;
-  
-  /*****VALIDATEADDRESS******/
-    if (myContact.address.value == null ||
-    myContact.address.value === "")
-    errorMessages += "<p> An Address is required</p>";
-    else
-    validAddress = true;
-  
-  /*******VALIDATE CITY******/
-  
-   if (myContact.city.value == null ||
-    myContact.city.value === "")
-    errorMessages += "<p> A City is required</p>";
-  else
-    validCity = true;
-  /**********VALIDATE COUNTRY****************/
-  
-   if (myContact.countries.value == null ||
-    myContact.countries.value === "")
-    errorMessages += "<p> A Country is required</p>";
-  else
-    validCountry = true;
-  
-  /**********VALIDATE ZIP CODE*******************/
-
-  if (myContact.countries.value == 3
-     myContact.zipcode.value.length === 5)
-      errorMessages += "<p>A Zip Code is required if the chosen country is USA.</p>";
-    else
-      validZipcode = true;
-  
-      document.getElementById("errorMessages").innerHTML = errorMessages;
-      //make sure you return all the boolean variable that are checking each filed
-      return (validFirstName && validLastName && validEmail && validUsername && validUserpassword && validPhone && validAddress && validCity && validZipcode);
-    }
+      frmvalidator.addValidation("ZipCode","maxlen=5");
+      frmvalidator.addValidation("ZipCode","req");
+            
+      frmvalidator.addValidation("UserName","maxlen=12");
+      frmvalidator.addValidation("UserName","req");
+            
+     frmvalidator.addValidation("Comment","maxlen=50");
