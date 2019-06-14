@@ -1,88 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="robots" content="noindex">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="artifact04.css" />
-    <title>Artifact #4</title>
-  </head>
-  <body>
-    <h1>CONTACT US FROM</h1>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Artifact03</title>
+</head>
+<body>
+
+ <h1>Contact Form</h1>
     <div id="errorMessages"></div>
-    <script src="artifact04.js"></script>
-    <!--Add the URL to your Thank you page-->
-      <form action="https://zigalekefale.github.io/assignment/portfolio/thankyou.html" id="usrform" method="get" name="myForm" 
-          onsubmit="return ValidateForm();"> 
-        <label for="firstname">Enter Firstname (Should accept only alphabetical value, maximum 20 characters)</label>
-        <br>
-        <input type="text" id="firstname">
-        <br>
-        <label for="lastname">Enter Lastname (Should accept only alphabetical value, maximum 50 characters)</label>
-        <br>
-        <input type="text" id="lastname">
-        <br>
-        <label for="email">Enter Email</label>
-        <br>
-        <input type="text" id="email">
-        <br>
-         <label for="phone">Enter Phone Number (Should accept only NUMERICAL values.  Maximum 15 digits. )</label>
-        <br>
-        <input type="text" id="phone">
-        <br>
-        <label for="username">Enter username (Max 12 characters)</label>
-        <br>
-        <input type="text" maxlength="12" id="username">
-        <br>
-        <label for="password">Enter password (Max 7 characters)</label>
-        <br>
-        <input type="password" maxlength="7" id="password">
-     
-        <br> Address<br>
-        <label for="address">Enter Address</label>
-        <br>
-        <input type="text" name="address" id="address" size="50">
-        <br>
-        <label for="city">Enter City</label>
-        <br>
-        <input type="text" name="city" id="city">
-        <br>
-        <label for="countries">Choose Country</label>
-        <br>
-        <select id="countries">
-          <option>Canada</option>
-          <option>Mexico</option>
-         <option value="USA">United 
-           States</option>
-        </select>
-        <br>
-   <br>
-<label for="states">Choose Your State </label>
-        <br>
-        <select id="states">
-          <option>Alabama</option>
-          <option>Alaska</option>
-          <option>Arizona</option>
-         <option>Arkansas </option>
-          <option>California </option>
-           <option>Delaware </option>
-          <option>Florida </option>
-          <option>Georgia</option>
-          <option>Illinois</option>
-         <option>Orgen </option>
-          <option>Washington</option>
-          <option>Wyoming</option>
-        </select>
-        <br>
-        <label for="zipcode">Enter zipcode (Maximum 5 digits)</label>
-        <br>
-        <input type="text" name="zipcode" id="zipcode">
-     
-        <br>Comments<br> 
-  <textarea rows="4" cols="50" name="comment" form="usrform"> </textarea>
-      <br>
-      <input id="submit" type="submit" value="submit">
-      <input id="cancel" type="submit" value="cancel">
-      </form>
-  </body>
-  </html>
+    <form action="thankyou.html" id="myform" name=myContact onsubmit="return ValidateForm();">
+      
+      <p>
+        <label class="form-label" for='FirstName'>First Name:</label>
+        <input class="form-control" type="text" maxlength="20" id="FirstName" name="FirstName" required />
+      </p>
+      <p>
+        <label class="form-label" for='LastName'>Last Name:</label>
+        <input class="form-control" type="text" maxlength="50" id="LastName" name="LastName" required/>
+      </p>
+      
+        <p>
+        <label class="form-label" for='UserName'>User Name:</label>
+        <input class="form-control" type="text" maxlength="12" id="UserName" name="UserName" required/>
+      </p>
+      
+        <label class="form-label" for='Email'>Email:</label>
+        <input class="form-control" type="email" id="EMail" name="EMail" required/>
+     <br>
+        <p>
+    <label for='Phone'>Phone:</label>
+    <input type="text" id="Phone" name="Phone" />
+    </p>
+      
+      <p>
+        <label class="form-label" for='Password'>Password:</label>
+        <input class="form-control" type="password" id="Password" name="Password" required/>
+      </p>
+      
+      <p>
+    <label for='Address'>Address:</label>
+    <textarea cols="30" rows="3" id="Address" name="Address"></textarea>
+    </p>
+
+       <p>
+        <label class="form-label" for='City'>City:</label>
+        <input class="form-control" type="text" id="City" name="City" required/>
+      </p>
+      
+      <p>
+    <label for='Country'>Country:</label>
+    <select id="Country"  name="Country">
+        <option value="000" selected="selected">[Choose Country]</option>
+        <option value="008">Albania</option>
+        <option value="012">Algeria</option>
+        <option value="016">American Samoa</option>
+        <option value="020">Andorra</option>
+        <option value="024">Angola</option>
+        <option value="660">Anguilla</option>
+        <option value="010">Antarctica</option>
+        <option value="028">Antigua And Barbuda</option>
+        <option value="032">Argentina</option>
+        <option value="051">Armenia</option>
+        <option value="533">United States</option>
+    </select>
+</p>
+      <p>
+    <label for='Country'>States:</label>
+    <select id="Country"  name="States">
+        <option value="000" selected="selected">[Choose State]</option>
+        <option value="008">Alabama</option>
+        <option value="012">California</option>
+        <option value="016">Orgen</option>
+        <option value="020">Arizona</option>
+        <option value="024">Alaska</option>
+        <option value="660">Washington</option>
+        
+    </select>
+</p>
+
+      
+       <p>
+        <label class="form-label" for='ZipCode'>Zip Code:</label>
+        <input class="form-control" type="text" id="ZipCode" name="ZipCode" required/>
+      </p>
+      
+      <p>
+        <label class="form-label" for='Comment'>Comment:</label>
+        <textarea class="form-control" cols="50" rows="5" id="Address" name="Address" required></textarea>
+      </p>
+      
+ <input type="submit" name="submit" value="Submit">
+      
+
+ </body>
+</html>
