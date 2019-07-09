@@ -59,6 +59,12 @@ border-top: 1px solid #e1e1e1;
 }
 
 
+#wrap { 
+margin: 100px;
+width: 900px;
+background: #DFC2F7;
+background-color:#24f1ba;
+}
 
 
 #menu ul li a { color: #12c; text-decoration: none; border-bottom: 1px dotted #12c; }
